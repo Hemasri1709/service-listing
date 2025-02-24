@@ -1,16 +1,15 @@
 import { useState } from 'react'
 
 import './App.css'
+import ServiceCard from './components/serviceCard'
 
-import serviceCard from "./components/serviceCard.jsx"
-const data = [{name:"Web development", title:"descripion"} , {name:"full stack", title: "description"}]
+const data = [{name:"Web development", title:"description"} , {name:"full stack", title: "description"}]
 function App(){
   return(
     <>
-    <serviceCard data = {data}/>
+      <ServiceCard data={data} />
     </>
   )
 } 
-
 
 export default App
